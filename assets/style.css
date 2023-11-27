@@ -91,7 +91,7 @@ body {
     width: 60%;
 }
 
-#about-me p {
+.about-me__text {
     width: 80%;
     font-size: 14px;
 }
@@ -165,7 +165,7 @@ body {
     font-family: Spectral;
     font-style: italic;
     font-weight: 300;
-
+    font-size: 2.5rem;
 }
 
 .quote__author {
@@ -283,7 +283,7 @@ input[type="submit"] {
         margin-bottom: 1em;
     }
 
-    #about-me h6,
+    #about-me h2,
     #about-me p {
         width: 100%;
     }
