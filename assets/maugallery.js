@@ -1,4 +1,3 @@
-//TODO Le titre du document c'est "maugallery", ça à un sens ??
 //TODO Rendre lisible le code (espace + commentaire)
 (function ($) {
 
@@ -52,9 +51,6 @@
         });
     };
 
-    /**
-     * 
-     */
     $.fn.mauGallery.defaults = {
         columns: 3,
         lightBox: true,
