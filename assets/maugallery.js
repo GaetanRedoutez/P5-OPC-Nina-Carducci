@@ -1,4 +1,3 @@
-//TODO Rendre lisible le code (espace + commentaire)
 (function ($) {
 
     /**
@@ -7,7 +6,7 @@
      * @returns {void} 
      */
     $.fn.mauGallery = function (options) {
-        var options = $.extend($.fn.mauGallery.defaults, options);   //TODO On n'utilise plus var mais let ou const
+        var options = $.extend($.fn.mauGallery.defaults, options);   
         var tagsCollection = [];
 
         return this.each(function () {
@@ -180,7 +179,6 @@
 
             $(imagesCollection).each(function (i) {
                 if ($(activeImage).attr("src") === $(this).attr("src")) {
-                    //TODO Soustraction index
                     index = i - 1;
                 }
             });
@@ -222,7 +220,6 @@
 
             $(imagesCollection).each(function (i) {
                 if ($(activeImage).attr("src") === $(this).attr("src")) {
-                    //TODO Addition index
                     index = i + 1;
                 }
             });
@@ -277,7 +274,7 @@
             }
 
             $(".active-tag").removeClass("active active-tag");
-            //TODO Ajout active avant active-tag
+            
             $(this).addClass("active active-tag");
 
             var tag = $(this).data("images-toggle");
