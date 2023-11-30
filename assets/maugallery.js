@@ -6,7 +6,7 @@
      * @returns {void} 
      */
     $.fn.mauGallery = function (options) {
-        var options = $.extend($.fn.mauGallery.defaults, options);   
+        var options = $.extend($.fn.mauGallery.defaults, options);
         var tagsCollection = [];
 
         return this.each(function () {
@@ -274,7 +274,7 @@
             }
 
             $(".active-tag").removeClass("active active-tag");
-            
+
             $(this).addClass("active active-tag");
 
             var tag = $(this).data("images-toggle");
