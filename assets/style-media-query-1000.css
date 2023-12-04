@@ -1,0 +1,66 @@
+@media all and (max-width: 1000px) {
+    #about {
+        flex-direction: column;
+
+    }
+
+    .picture {
+        width: 50%;
+    }
+
+    .picture.left::before {
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        bottom: auto;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .about-me__title {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    #services .container {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 2em 0
+    }
+
+    .service__description {
+        margin-bottom: 1em;
+    }
+
+    #services .container::before {
+        width: 30%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        left: auto;
+        z-index: 0;
+    }
+
+    #contact .container {
+        flex-direction: column;
+    }
+
+    #contact .picture.right {
+        margin-top: 1em;
+    }
+
+    .picture.right::before {
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
