@@ -1,0 +1,6 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      http_headers:
+        Cache-Control: "max-age=31536000"
